@@ -59,6 +59,13 @@ target_include_directories(giflib
   "$<BUILD_INTERFACE:${CMAKE_CURRENT_LIST_DIR}/lib>"
 )
 
+if(WIN32)
+  target_include_directories(giflib
+    PUBLIC
+    "$<BUILD_INTERFACE:${CMAKE_CURRENT_LIST_DIR}/win32>"
+    ) 
+endif()
+
 ### Install ###
 set(generated_dir "${CMAKE_CURRENT_BINARY_DIR}/generated")
 
