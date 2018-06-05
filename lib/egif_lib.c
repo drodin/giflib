@@ -8,6 +8,11 @@ two modules will be linked.  Preserve this property!
 
 *****************************************************************************/
 
+// https://stackoverflow.com/a/39858955
+#if defined(__ANDROID__)
+# define __USE_GNU
+#endif
+
 #include <unistd.h>
 #include <stdint.h>
 #include <stdlib.h>
