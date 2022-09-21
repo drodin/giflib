@@ -21,7 +21,7 @@ set(GIFLIB_INCLUDES
 
 add_library(giflib ${GIFLIB_SRCS})
 
-if (WIN32)
+if (MSVC)
   # Suppress warnings to reduce build log size.
   target_compile_options(giflib PRIVATE
     "/wd4267"
