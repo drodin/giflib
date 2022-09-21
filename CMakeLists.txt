@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.0.0)
 
-project(giflib VERSION 5.1.4)
+project(giflib VERSION 5.2.1)
 
 set(GIFLIB_SRCS
     "lib/dgif_lib.c"
